@@ -1,1 +1,2 @@
-auto test
+auto test the content
+new line
