@@ -1,0 +1,23 @@
+name: Read file automatically
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  read-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display current directory
+        run: pwd
+
+      - name: List repository files
+        run: ls -la
+
+      - name: Read app.txt
+        run: cat app.txt
